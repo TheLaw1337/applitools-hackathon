@@ -10,6 +10,9 @@ class Page {
         cy.get('#colors__Black').check();
         cy.get('#filterBtn').click();
     }
+    clickFirstBlackShoe() {
+        cy.get('#product_grid').find('a').first().click();
+    }
 }
 
 export default Page;

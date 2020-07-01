@@ -6,7 +6,7 @@ describe('Task 1', () => {
         cy.viewport(800, 600);
         cy.eyesOpen({
           appName: 'Hackathon V1',
-          testName: 'Task 2',
+          testName: 'Task 3',
           browser: [
             {width: 1200, height: 700, name: 'chrome'},
             {width: 1200, height: 700, name: 'firefox'},
@@ -26,15 +26,9 @@ describe('Task 1', () => {
     it('should load a page and take screenshot', () => {
         const page = new Page();
 
-        page.navigateV2();
+        page.navigateV1();
         page.filterBlackShoes();
-        cy.eyesCheckWindow({
-            tag: 'Filter Results',
-            target: 'region',
-            selector: {
-                type: 'css',
-                selector: '#product_grid'
-            }   
-        });
+        page.clickFirstBlackShoe();
+        cy.eyesCheckWindow('Product Details Test');
     })
 })

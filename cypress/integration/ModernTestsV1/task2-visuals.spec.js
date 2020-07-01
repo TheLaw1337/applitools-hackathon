@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import Page from './page_objects/page'
+import Page from '../page_objects/page'
 
 describe('Task 1', () => {
     beforeEach(() => {
