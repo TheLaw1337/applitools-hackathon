@@ -10,4 +10,4 @@ Repository for my Applitools Cross Browser Testing Hackathon submission
 
 ## Running tests
 
-You can run tests via CLI using `npx cypress open` and choosing a spec file.
+You can run tests via GUI using `npx cypress open` and choosing a spec file.
