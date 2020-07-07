@@ -6,7 +6,6 @@
 # Cypress screenshots, videos and other folders
 /cypress/videos
 /cypress/screenshots
-/cypress/support
 /cypress/fixtures
 
 # testing

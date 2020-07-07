@@ -70,11 +70,6 @@ class Page {
     getOpenFiltersButton() {
         return cy.get('.clearfix .open_filters');
     };
-    // below method WIP
-    getProductMenuOnHover() {
-        cy.get('.grid_item').first().trigger('focusin');
-        return cy.get('.grid_item #UL____222');
-    };
 
     getButtonsUnderProducts() {
         return cy.get('.grid_item #UL____222');
